@@ -105,7 +105,7 @@ main {
   font-weight: bold;
   color: #f7f6f6;
   background-color: rgb(30, 57, 179);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #buyNow {
@@ -120,16 +120,18 @@ main {
   font-weight: bold;
   color: #fff;
   background-color: rgb(30, 57, 179);
-  transition: background-color 0.3s ease;
+  transition:background-color 0.3s ease, transform 0.3s ease;
   
 }
 
 #knowMore:hover {
   background-color: rgb(14, 23, 65);
+  transform: scale(1.1);
 }
 
 #buyNow:hover {
   background-color: rgb(14, 23, 65);
+  transform: scale(1.1);
 }
 
 #imageContainer {
@@ -153,7 +155,11 @@ main {
   background-size: cover;
   border-radius: 10px;
   border: 3PX solid #fff;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2)); */
+  transition: transform 0.4s ease;
+}
+
+#card1:hover{
+  transform: scale(1.15);
 }
 
 #card2 {
@@ -166,6 +172,11 @@ main {
   background-size: cover;
   border-radius: 10px;
   border: 3PX solid #fff;
+  transition: transform 0.4s ease;
+}
+
+#card2:hover{
+  transform: scale(1.15);
 }
 
 #card3 {
@@ -178,4 +189,9 @@ main {
   background-size: cover;
   border-radius: 10px;
   border: 3PX solid #fff;
+  transition: transform 0.4s ease;
+}
+
+#card3:hover{
+  transform: scale(1.15);
 }
