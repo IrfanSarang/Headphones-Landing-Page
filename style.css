@@ -79,6 +79,16 @@ header {
   transform: scale(1);
 }
 
+/* Style the button */
+#icon{
+  height: 9vw;
+  width: 8vw;
+  margin: 4vw;
+  display: none;
+  border: 2px solid #fff;
+}
+
+
 /*Main Body styles*/
 
 main {
@@ -205,4 +215,56 @@ main {
 
 #card3:hover{
   transform: scale(1.15);
+}
+
+
+
+@media (max-width:400px){
+  header{
+    height: 120px;
+  }
+  #logo{
+    font-size: 6vw;
+  }
+  #S1,#S2{
+    font-size: 9vw;
+  }
+  #navbar{
+    display: none;
+  }
+  #icon{
+    display: block;
+  }
+  main{
+    display: block;
+  }
+  #infoContainer{
+    width: 100vw;
+    height: 35%;
+  }
+  #heading{
+    width: 80%;
+  }
+  #cta{
+    width: 80%;
+  }
+  #knowMore{
+    width: 35vw;
+    height: 18vw;
+    font-size: 5vw;
+  }
+  #buyNow{
+    width: 35vw;
+    height: 18vw;
+    font-size: 5vw;
+  }
+  #imageContainer{
+    width: 100vw;
+    height: 60%;
+  }
+  #card1,#card2,#card3{
+    width: 35vw;
+    height: 35vw;
+    padding: 20vw;
+  }
 }
