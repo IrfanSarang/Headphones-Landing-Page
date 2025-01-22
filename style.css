@@ -419,6 +419,62 @@ main {
   font-size: 1.2vw;
 }
 
+/*Contact Us Styles*/
+
+#contactUs {
+  background-color: #fff;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactUs h1 {
+  text-align: center;
+  font-size: 4vw;
+  width: 100vw;
+}
+
+form {
+  background-color: aliceblue;
+  width: 30vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 3vw;
+  margin: 2vw 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  padding: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+form textarea {
+  margin-bottom: 1vw;
+}
+form button {
+  width: 100%;
+  padding: 1vw;
+  background-color: rgb(81, 126, 240);
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border: 2px solid rgb(81, 126, 240);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: rgb(81, 126, 240);
+}
+
 /*Media queries*/
 @media (max-width: 480px) {
   header {
@@ -473,7 +529,7 @@ main {
   }
 
   #Features {
-    height: 65vh;
+    height: 100vh;
     flex-direction: column;
     gap: 5vw;
     margin: 5vw 0;
@@ -519,5 +575,72 @@ main {
     height: 12vw;
     width: 30vw;
     font-size: 4vw;
+  }
+  #Reviews {
+    height: 220vh;
+  }
+  #Reviews h1 {
+    font-size: 7vw;
+    height: 12vh;
+    padding-top: 9vw;
+  }
+  #ReviewinfoContainer {
+    width: 100vw;
+    height: 200vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .ReviewCard {
+    width: 75%;
+    height: 50vh;
+    margin: 3vw 0;
+    background-color: #fff;
+  }
+  .ReviewMain {
+    font-size: 4.5vw;
+    height: 80%s;
+  }
+  .ReviewHead {
+    height: 15%;
+  }
+  .userInfo {
+    width: 80%;
+  }
+  .userProfile {
+    width: 30%;
+  }
+  .userProfile img {
+    width: 40px;
+  }
+  .username {
+    width: 60%;
+  }
+  .username h2 {
+    font-size: 4vw;
+  }
+  .username p {
+    font-size: 3vw;
+  }
+  .star {
+    font-size: 3vw;
+    padding: 3px;
+    width: 20;
+  }
+
+  #contactUs {
+    height: 70vh;
+  }
+  #contactUs h1 {
+    font-size: 9vw;
+  }
+
+  form {
+    width: 80vw;
+    height: 45vh;
+  }
+
+  form button {
+    height: 10vw;
+    font-size: 2vh;
   }
 }
